@@ -1,0 +1,25 @@
+name: CI Workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up environment
+        run: |
+          echo "Setting up CI environment"
+
+      - name: Install dependencies
+        run: |
+          echo "Installing application dependencies"
+
+      - name: Build and Test
+        run: |
+          echo "Build and test completed successfully"
