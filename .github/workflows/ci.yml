@@ -22,4 +22,5 @@ jobs:
 
       - name: Build and Test
         run: |
-          echo "Build and test completed successfully"
+          echo "Running build and tests"
+          exit 1
